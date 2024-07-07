@@ -33,7 +33,7 @@ contract RaffleTest is Test {
         subscriptionId = config.subscriptionId;
     }
 
-    function testRaffleInitializesInOperState() public view {
+    function testRaffleInitializesInOpenState() public view {
         assert(raffle.getRaffleState() == Raffle.RaffleState.OPEN);
     }
 }
